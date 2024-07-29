@@ -1,0 +1,192 @@
+
+
+
+.right {
+    position: relative;
+    background-color: snow;
+    width: 70%;
+    padding: 2rem;
+}
+
+.about {
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.about:last-child {
+    margin-bottom: 0px;
+}
+
+.about p{
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title-about {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Veja Meus Projetos */
+
+.projetos{
+    text-align: center;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.projetos a{
+    font-size: 1.2rem;
+    color: #094c74;
+    transition: all;
+}
+
+.projetos a:hover{
+    color: #2b8dc5;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.about .grid-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+}
+
+.skill-box .percent {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+/* Certificações */
+.certifications {
+    width: 100%;
+}
+
+.certifications ul {
+    list-style-type: none;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.certifications li {
+    width: 100%;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.certifications h4 {
+    color: #094c74;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.certifications h4:hover{
+    color: #2b8dc5;
+    transition: .3s;
+    text-decoration: underline;
+}
+
+
+/* Experiencia profissional */
+.company {
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+    justify-content: left;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.company h5 {
+    border-bottom: 1px solid grey;
+    width: 35%;
+    font-size: 1rem; 
+    padding-bottom: 0.4rem; 
+}
+
+.responsibilities ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    line-height: 1.5;
+}
+
+.responsibilities li {
+    margin-bottom: 0.4rem;
+}
+
+/* Media Queries para Responsividade */
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .container .left, .right {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .right {
+        padding: 1rem;
+    }
+
+    .infos, .info-education, .info-lenguages{
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .infos ,.info-education, .info-lenguages{
+        padding: 2rem;
+    }
+
+    .profile-text h2 {
+        font-size: 1rem;
+    }
+
+    .profile-text span {
+        font-size: 0.8rem;
+    }
+
+    .title {
+        font-size: 0.9rem;
+    }
+
+    .infos .text, .info-education h4, .info-lenguages .text {
+        font-size: 0.9rem;
+    }
+
+    .info-lenguages ul, .certifications ul {
+        width: 100%;
+    }
+
+    .certifications ul {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .certifications li {
+        width: 100%;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    .projetos{
+        padding-top: 1rem;
+    }
+
+    .projetos a{
+        font-size: 1.4rem;
+    }
+}

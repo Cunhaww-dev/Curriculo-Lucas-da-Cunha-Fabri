@@ -1,0 +1,85 @@
+@media (max-width: 850px) {
+    .profile-text h2 {
+        font-size: 1.1rem;
+    }
+
+    .profile-text span {
+        font-size: 0.9rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .infos .text, .info-education h4, .info-lenguages .text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .container .left, .right {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .right {
+        padding: 1rem;
+    }
+
+    .infos, .info-education, .info-lenguages{
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .infos ,.info-education, .info-lenguages{
+        padding: 2rem;
+    }
+
+    .profile-text h2 {
+        font-size: 1rem;
+    }
+
+    .profile-text span {
+        font-size: 0.8rem;
+    }
+
+    .title {
+        font-size: 0.9rem;
+    }
+
+    .infos .text, .info-education h4, .info-lenguages .text {
+        font-size: 0.9rem;
+    }
+
+    .info-lenguages ul, .certifications ul {
+        width: 100%;
+    }
+
+    .certifications ul {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .certifications li {
+        width: 100%;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    .projetos{
+        padding-top: 1rem;
+    }
+
+    .projetos a{
+        font-size: 1.4rem;
+    }
+}
